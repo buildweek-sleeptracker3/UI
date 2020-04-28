@@ -1,0 +1,59 @@
+.center-flex(@justify, @align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.nav-buttons() {
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: @font-color;
+  font-family: @heading-font;
+  min-width: 30%;
+  max-width: 160px;
+
+  @media @desktop {
+    font-size: 1.8rem;
+  }
+
+  @media @mid-point {
+    font-size: 1.6rem;
+  }
+
+  @media @mobile {
+    font-size: 1.8rem;
+  }
+
+  @media @small-phone {
+    font-size: 1.5rem;
+  }
+
+  &:hover {
+    color: lighten(@font-color, 40%);
+  }
+}
+
+.button-style(@bg-color, @btn-width, @btn-padding: 4%) {
+  background-color: @bg-color;
+  width: @btn-width;
+  padding: @btn-padding;
+  color: @font-color;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 15px;
+  margin: 0 auto;
+  text-decoration: none;
+
+  @media @tablet {
+    font-size: 1.7rem;
+  }
+
+  @media @mobile {
+    font-size: 1.9rem;
+  }
+
+  &:hover {
+    background-color: lighten(@bg-color, 10%);
+  }
+}
