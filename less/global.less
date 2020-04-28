@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: @body-font;
+  background-color: #121212;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: @heading-font;
+  text-align: center;
+}
+
+h1 {
+  font-size: 8rem;
+  padding: 2% 0;
+
+  @media @desktop {
+    font-size: 6.8rem;
+  }
+
+  @media @tablet {
+    font-size: 5.5rem;
+  }
+
+  @media @mid-point {
+    font-size: 4.8rem;
+  }
+
+  @media @mobile {
+    font-size: 5.2rem;
+    padding-top: 3%;
+  }
+
+  @media @small-phone {
+    font-size: 4.8rem;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding: 4% 2%;
+  line-height: 1.2;
+
+  @media @desktop {
+    font-size: 2rem;
+  }
+
+  @media @tablet {
+    font-size: 1.8rem;
+  }
+
+  @media @mid-point {
+    font-size: 1.5rem;
+    padding: 2% 0 3%;
+  }
+
+  @media @mobile {
+    font-size: 1.8rem;
+  }
+
+  @media @small-phone {
+    font-size: 1.6rem;
+  }
+}
+
+h3 {
+  font-size: 2.2rem;
+  padding: 1% 0 2% 0;
+
+  @media @desktop {
+    font-size: 1.8rem;
+  }
+
+  @media @mid-point {
+    font-size: 1.6rem;
+  }
+
+  @media @mobile {
+    font-size: 2rem;
+  }
+}
+
+section {
+  padding: 5% 0;
+}
