@@ -1,6 +1,5 @@
 .featured {
   .center-flex(space-evenly, center);
-  color: @font-color;
 
   @media @mobile {
     flex-direction: column;
@@ -54,9 +53,8 @@
 
 .preview {
   .center-flex(space-evenly, flex-start);
-  background-color: #272727;
+  background-color: @med-bg;
   text-align: center;
-  color: @font-color;
   width: 100%;
 
   @media @mobile {
@@ -101,7 +99,6 @@
 }
 
 .app-about {
-  color: @font-color;
   margin: 0 auto;
   text-align: center;
   .center-flex(center, center);
