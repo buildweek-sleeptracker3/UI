@@ -2,8 +2,16 @@
   .center-flex(space-evenly, center);
   color: @font-color;
 
+  @media @mobile {
+    flex-direction: column;
+  }
+
   .feature-img {
     max-width: 46%;
+
+    @media @mobile {
+      max-width: 90%;
+    }
 
     img {
       border-radius: 30px;
@@ -17,10 +25,30 @@
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
+
+    @media @mobile {
+      width: 90%;
+    }
+
+    @media @small-phone {
+      width: 95%;
+    }
   }
 
   .big-button {
     .button-style(@accent-color, 250px, 2%);
+
+    @media @desktop {
+      .button-style(@accent-color, 200px, 2%);
+    }
+
+    @media @desktop {
+      .button-style(@accent-color, 150px, 2%);
+    }
+
+    @media @mobile {
+      .button-style(@accent-color, 200px, 2.5%);
+    }
   }
 }
 
@@ -31,14 +59,43 @@
   color: @font-color;
   width: 100%;
 
+  @media @mobile {
+    flex-direction: column;
+    .center-flex(space-evenly, center);
+  }
+
   .feature-preview {
     width: 31%;
     img {
       max-width: 100%;
       border-radius: 30px;
+
+      @media @mobile {
+        padding-top: 2%;
+      }
+
+      @media @small-phone {
+        width: 80%;
+      }
     }
     h3 {
       padding: 10% 0 0 0;
+
+      @media @mobile {
+        padding: 4% 0 6%;
+      }
+    }
+
+    @media @desktop {
+      width: 29%;
+    }
+
+    @media @tablet {
+      width: 27%;
+    }
+
+    @media @mobile {
+      width: 80%;
     }
   }
 }
@@ -54,6 +111,18 @@
     padding: 0;
     font-size: 3.5rem;
     margin-bottom: 1%;
+
+    @media @desktop {
+      font-size: 3.2rem;
+    }
+
+    @media @tablet {
+      font-size: 3rem;
+    }
+
+    @media @mid-point {
+      font-size: 2.5rem;
+    }
   }
 
   p {
@@ -61,9 +130,37 @@
     margin: 1.5% 0;
     line-height: 1.8;
     max-width: 900px;
+
+    @media @desktop {
+      max-width: 90%;
+      font-size: 1.8rem;
+    }
+
+    @media @tablet {
+      font-size: 1.6rem;
+    }
+
+    @media @mid-point {
+      font-size: 1.4rem;
+    }
   }
 
   a {
     .button-style(@accent-color, 250px, 1%);
+
+    @media @desktop {
+      .button-style(@accent-color, 200px, 1%);
+    }
+
+    @media @mobile {
+      .button-style(@accent-color, 200px, 2%);
+    }
+  }
+
+  h3 {
+    @media @tablet {
+      font-size: 1.8rem;
+      padding-bottom: 3.5%;
+    }
   }
 }
