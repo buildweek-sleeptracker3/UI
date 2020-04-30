@@ -189,7 +189,7 @@ h1 {
   }
 }
 h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   padding: 4% 2%;
   line-height: 1.2;
 }
@@ -869,44 +869,48 @@ footer nav a:hover {
     padding-bottom: 3.5%;
   }
 }
-.about-title {
+.title-block {
   padding: 2.5% 0;
 }
 @media (max-width: 500px) {
-  .about-title {
+  .title-block {
     padding: 5% 0;
   }
 }
 @media (max-width: 375px) {
-  .about-title {
+  .title-block {
     padding: 6% 0;
   }
 }
+.title-block h1 {
+  font-size: 7rem;
+}
 @media (max-width: 375px) {
-  .about-title h1 {
+  .title-block h1 {
     font-size: 4.4rem;
   }
 }
-.about-title h3 {
+.title-block h3 {
   padding: 1% 0;
   width: 75%;
   margin: 0 auto;
   line-height: 1.4;
+  font-size: 2rem;
 }
 @media (max-width: 800px) {
-  .about-title h3 {
+  .title-block h3 {
     width: 85%;
     padding: 1.5% 0;
   }
 }
 @media (max-width: 500px) {
-  .about-title h3 {
+  .title-block h3 {
     width: 92%;
     font-size: 1.6rem;
   }
 }
 @media (max-width: 375px) {
-  .about-title h3 {
+  .title-block h3 {
     font-size: 1.5rem;
   }
 }
@@ -1013,7 +1017,7 @@ footer nav a:hover {
 }
 .dev-desc .interior .desc-text h2 {
   font-size: 3.4rem;
-  padding-bottom: 1%;
+  padding: 0 0 1%;
 }
 @media (max-width: 1000px) {
   .dev-desc .interior .desc-text h2 {
@@ -1204,4 +1208,45 @@ footer nav a:hover {
   .final-info a {
     font-size: 1.7rem;
   }
+}
+.product-features {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.product-features .feature-light,
+.product-features .feature-dark {
+  width: 100%;
+  padding: 2.5% 0 3%;
+}
+.product-features .feature-light .specifics,
+.product-features .feature-dark .specifics {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.product-features .feature-light .specifics img,
+.product-features .feature-dark .specifics img {
+  border-radius: 30px;
+  max-width: 30%;
+}
+.product-features .feature-light .specifics .text,
+.product-features .feature-dark .specifics .text {
+  width: 50%;
+}
+.product-features .feature-light .specifics .text p,
+.product-features .feature-dark .specifics .text p {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  text-align: center;
+  padding: 3% 0;
+}
+.product-features .feature-light h2,
+.product-features .feature-dark h2 {
+  padding: 0 0 3%;
+}
+.product-features .feature-light {
+  background-color: #272727;
+}
+.product-features .feature-dark {
+  background-color: #121212;
 }
