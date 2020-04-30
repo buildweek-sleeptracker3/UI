@@ -1,0 +1,37 @@
+.product-features {
+  padding- 1% 0;
+  .feature-light,
+  .feature-dark {
+    width: 100%;
+    padding: 2.5% 0 3%;
+    .specifics {
+      .center-flex(space-evenly, center);
+
+      img {
+        border-radius: 30px;
+        max-width: 30%;
+      }
+
+      .text {
+        width: 50%;
+
+        p {
+          font-size: 1.7rem;
+          line-height: 1.5;
+          text-align: center;
+          padding: 3% 0;
+        }
+      }
+    }
+
+    h2 {
+      padding: 0 0 3%;
+    }
+  }
+  .feature-light {
+    background-color: @med-bg;
+  }
+  .feature-dark {
+    background-color: @dark-bg;
+  }
+}

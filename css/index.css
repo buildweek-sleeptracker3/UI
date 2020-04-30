@@ -189,7 +189,7 @@ h1 {
   }
 }
 h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   padding: 4% 2%;
   line-height: 1.2;
 }
@@ -242,6 +242,11 @@ section {
   padding: 5% 0;
   color: #e0e0e0;
 }
+@media (max-width: 500px) {
+  section {
+    padding: 6% 0;
+  }
+}
 header nav {
   background-color: #272727;
   display: flex;
@@ -249,6 +254,16 @@ header nav {
   align-items: center;
   border-top: 30px solid #383838;
   padding: 1.5% 0;
+}
+@media (max-width: 650px) {
+  header nav {
+    padding: 2.5% 0;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    padding: 2.5% 0;
+  }
 }
 @media (max-width: 375px) {
   header nav {
@@ -456,6 +471,11 @@ footer nav a {
 footer nav a:hover {
   color: #ffffff;
 }
+@media (max-width: 500px) {
+  footer nav a {
+    font-size: 1.4rem;
+  }
+}
 @media (max-width: 375px) {
   footer nav a {
     font-size: 1.6rem;
@@ -464,17 +484,19 @@ footer nav a:hover {
 }
 @media (max-width: 800px) {
   footer nav {
-    width: 50%;
+    width: 60%;
+    padding: 2%;
   }
 }
 @media (max-width: 650px) {
   footer nav {
-    width: 60%;
+    width: 70%;
   }
 }
 @media (max-width: 500px) {
   footer nav {
     width: 80%;
+    padding: 3%;
   }
 }
 @media (max-width: 375px) {
@@ -542,6 +564,11 @@ footer nav a:hover {
     font-size: 1.9rem;
   }
 }
+@media (max-width: 375px) {
+  .featured .big-button {
+    font-size: 1.7rem;
+  }
+}
 .featured .big-button:hover {
   background-color: #4ba3be;
 }
@@ -571,6 +598,11 @@ footer nav a:hover {
     font-size: 1.9rem;
   }
 }
+@media (max-width: 1000px) and (max-width: 375px) {
+  .featured .big-button {
+    font-size: 1.7rem;
+  }
+}
 @media (max-width: 1000px) {
   .featured .big-button {
     background-color: #39869d;
@@ -597,6 +629,11 @@ footer nav a:hover {
     font-size: 1.9rem;
   }
 }
+@media (max-width: 1000px) and (max-width: 375px) {
+  .featured .big-button {
+    font-size: 1.7rem;
+  }
+}
 @media (max-width: 500px) {
   .featured .big-button {
     background-color: #39869d;
@@ -621,6 +658,11 @@ footer nav a:hover {
 @media (max-width: 500px) and (max-width: 500px) {
   .featured .big-button {
     font-size: 1.9rem;
+  }
+}
+@media (max-width: 500px) and (max-width: 375px) {
+  .featured .big-button {
+    font-size: 1.7rem;
   }
 }
 .preview {
@@ -686,6 +728,7 @@ footer nav a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 2%;
 }
 .app-about h2 {
   padding: 0;
@@ -750,6 +793,11 @@ footer nav a:hover {
     font-size: 1.9rem;
   }
 }
+@media (max-width: 375px) {
+  .app-about a {
+    font-size: 1.7rem;
+  }
+}
 .app-about a:hover {
   background-color: #4ba3be;
 }
@@ -779,6 +827,11 @@ footer nav a:hover {
     font-size: 1.9rem;
   }
 }
+@media (max-width: 1000px) and (max-width: 375px) {
+  .app-about a {
+    font-size: 1.7rem;
+  }
+}
 @media (max-width: 500px) {
   .app-about a {
     background-color: #39869d;
@@ -805,17 +858,61 @@ footer nav a:hover {
     font-size: 1.9rem;
   }
 }
+@media (max-width: 500px) and (max-width: 375px) {
+  .app-about a {
+    font-size: 1.7rem;
+  }
+}
 @media (max-width: 800px) {
   .app-about h3 {
     font-size: 1.8rem;
     padding-bottom: 3.5%;
   }
 }
-.about-title {
+.title-block {
   padding: 2.5% 0;
 }
-.about-title h2 {
+@media (max-width: 500px) {
+  .title-block {
+    padding: 5% 0;
+  }
+}
+@media (max-width: 375px) {
+  .title-block {
+    padding: 6% 0;
+  }
+}
+.title-block h1 {
+  font-size: 7rem;
+}
+@media (max-width: 375px) {
+  .title-block h1 {
+    font-size: 4.4rem;
+  }
+}
+.title-block h3 {
   padding: 1% 0;
+  width: 75%;
+  margin: 0 auto;
+  line-height: 1.4;
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .title-block h3 {
+    width: 85%;
+    padding: 1.5% 0;
+  }
+}
+@media (max-width: 500px) {
+  .title-block h3 {
+    width: 92%;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 375px) {
+  .title-block h3 {
+    font-size: 1.5rem;
+  }
 }
 .dev-desc {
   padding: 0;
@@ -829,8 +926,33 @@ footer nav a:hover {
   width: 100%;
   padding: 3% 0;
 }
+@media (max-width: 800px) {
+  .dev-desc .bg-dark,
+  .dev-desc .bg-light {
+    padding: 4% 0;
+  }
+}
+@media (max-width: 375px) {
+  .dev-desc .bg-dark,
+  .dev-desc .bg-light {
+    padding: 8% 0;
+  }
+}
 .dev-desc .bg-dark {
   background-color: #121212;
+}
+@media (max-width: 500px) {
+  .dev-desc .bg-dark .interior {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .dev-desc .bg-dark .interior .desc-text {
+    order: 1;
+  }
 }
 .dev-desc .bg-light {
   background-color: #272727;
@@ -839,36 +961,292 @@ footer nav a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 65%;
+  width: 70%;
   margin: 0 auto;
 }
+@media (max-width: 1000px) {
+  .dev-desc .interior {
+    width: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .dev-desc .interior {
+    width: 95%;
+  }
+}
+@media (max-width: 650px) {
+  .dev-desc .interior {
+    width: 99%;
+    padding: 1% 0;
+  }
+}
+@media (max-width: 500px) {
+  .dev-desc .interior {
+    flex-direction: column;
+  }
+}
 .dev-desc .interior img {
-  max-width: 30%;
+  max-width: 28%;
   border-radius: 250px;
-  border: 8px solid #39869d;
+  border: 10px solid #39869d;
+}
+@media (max-width: 650px) {
+  .dev-desc .interior img {
+    border: 5px solid #39869d;
+  }
+}
+@media (max-width: 500px) {
+  .dev-desc .interior img {
+    max-width: 50%;
+    margin-bottom: 3%;
+  }
+}
+@media (max-width: 375px) {
+  .dev-desc .interior img {
+    max-width: 60%;
+  }
 }
 .dev-desc .interior .desc-text {
-  width: 60%;
+  width: 62%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .dev-desc .interior .desc-text {
+    width: 92%;
+  }
 }
 .dev-desc .interior .desc-text h2 {
   font-size: 3.4rem;
-  padding-bottom: 1%;
+  padding: 0 0 1%;
+}
+@media (max-width: 1000px) {
+  .dev-desc .interior .desc-text h2 {
+    padding-top: 0;
+  }
+}
+@media (max-width: 650px) {
+  .dev-desc .interior .desc-text h2 {
+    font-size: 2.9rem;
+  }
+}
+@media (max-width: 375px) {
+  .dev-desc .interior .desc-text h2 {
+    font-size: 2.6rem;
+  }
 }
 .dev-desc .interior .desc-text h3 {
   font-size: 2.5rem;
   padding-bottom: 3%;
 }
+@media (max-width: 650px) {
+  .dev-desc .interior .desc-text h3 {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 375px) {
+  .dev-desc .interior .desc-text h3 {
+    font-size: 1.8rem;
+  }
+}
 .dev-desc .interior .desc-text p {
   font-size: 1.6rem;
-  line-height: 1.2;
+  line-height: 1.4;
+}
+@media (max-width: 650px) {
+  .dev-desc .interior .desc-text p {
+    font-size: 1.4rem;
+  }
 }
 .final-info {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  width: 70%;
-  padding: 2% 0 0;
+  flex-direction: column;
+  width: 100%;
+  padding: 2% 0;
   line-height: 1.8;
+}
+@media (max-width: 800px) {
+  .final-info {
+    padding: 3% 0;
+  }
+}
+@media (max-width: 375px) {
+  .final-info {
+    padding: 7% 0;
+  }
+}
+@media (max-width: 800px) {
+  .final-info h3 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 375px) {
+  .final-info h3 {
+    font-size: 1.8rem;
+    padding-bottom: 3%;
+  }
+}
+.final-info a {
+  background-color: #39869d;
+  width: 250px;
+  padding: 0.5%;
+  color: #e0e0e0;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 15px;
+  margin: 0 auto;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .final-info a {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 500px) {
+  .final-info a {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 375px) {
+  .final-info a {
+    font-size: 1.7rem;
+  }
+}
+.final-info a:hover {
+  background-color: #4ba3be;
+}
+@media (max-width: 800px) {
+  .final-info a {
+    background-color: #39869d;
+    width: 200px;
+    padding: 0.5%;
+    color: #e0e0e0;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    margin: 0 auto;
+    text-decoration: none;
+  }
+  .final-info a:hover {
+    background-color: #4ba3be;
+  }
+}
+@media (max-width: 800px) and (max-width: 800px) {
+  .final-info a {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  .final-info a {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 800px) and (max-width: 375px) {
+  .final-info a {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 500px) {
+  .final-info a {
+    background-color: #39869d;
+    width: 175px;
+    padding: 0.3%;
+    color: #e0e0e0;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    margin: 0 auto;
+    text-decoration: none;
+  }
+  .final-info a:hover {
+    background-color: #4ba3be;
+  }
+}
+@media (max-width: 500px) and (max-width: 800px) {
+  .final-info a {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .final-info a {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 500px) and (max-width: 375px) {
+  .final-info a {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 375px) {
+  .final-info a {
+    background-color: #39869d;
+    width: 175px;
+    padding: 0.2%;
+    color: #e0e0e0;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    margin: 0 auto;
+    text-decoration: none;
+  }
+  .final-info a:hover {
+    background-color: #4ba3be;
+  }
+}
+@media (max-width: 375px) and (max-width: 800px) {
+  .final-info a {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 375px) and (max-width: 500px) {
+  .final-info a {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 375px) and (max-width: 375px) {
+  .final-info a {
+    font-size: 1.7rem;
+  }
+}
+.product-features {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.product-features .feature-light,
+.product-features .feature-dark {
+  width: 100%;
+  padding: 2.5% 0 3%;
+}
+.product-features .feature-light .specifics,
+.product-features .feature-dark .specifics {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.product-features .feature-light .specifics img,
+.product-features .feature-dark .specifics img {
+  border-radius: 30px;
+  max-width: 30%;
+}
+.product-features .feature-light .specifics .text,
+.product-features .feature-dark .specifics .text {
+  width: 50%;
+}
+.product-features .feature-light .specifics .text p,
+.product-features .feature-dark .specifics .text p {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  text-align: center;
+  padding: 3% 0;
+}
+.product-features .feature-light h2,
+.product-features .feature-dark h2 {
+  padding: 0 0 3%;
+}
+.product-features .feature-light {
+  background-color: #272727;
+}
+.product-features .feature-dark {
+  background-color: #121212;
 }

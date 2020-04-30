@@ -1,8 +1,41 @@
-.about-title {
+.title-block {
   padding: 2.5% 0;
 
-  h2 {
+  @media @mobile {
+    padding: 5% 0;
+  }
+
+  @media @small-phone {
+    padding: 6% 0;
+  }
+
+  h1 {
+    font-size: 7rem;
+    @media @small-phone {
+      font-size: 4.4rem;
+    }
+  }
+
+  h3 {
     padding: 1% 0;
+    width: 75%;
+    margin: 0 auto;
+    line-height: 1.4;
+    font-size: 2rem;
+
+    @media @tablet {
+      width: 85%;
+      padding: 1.5% 0;
+    }
+
+    @media @mobile {
+      width: 92%;
+      font-size: 1.6rem;
+    }
+
+    @media @small-phone {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -15,9 +48,30 @@
   .bg-light {
     width: 100%;
     padding: 3% 0;
+
+    @media @tablet {
+      padding: 4% 0;
+    }
+
+    @media @small-phone {
+      padding: 8% 0;
+    }
   }
   .bg-dark {
     background-color: @dark-bg;
+
+    .interior {
+      @media @mobile {
+        .center-flex(space-around, center);
+        flex-direction: column;
+      }
+
+      .desc-text {
+        @media @mobile {
+          order: 1;
+        }
+      }
+    }
   }
 
   .bg-light {
@@ -26,41 +80,134 @@
 
   .interior {
     .center-flex(space-around, center);
-    width: 65%;
+    width: 70%;
     margin: 0 auto;
 
+    @media @desktop {
+      width: 80%;
+    }
+
+    @media @tablet {
+      width: 95%;
+    }
+
+    @media @mid-point {
+      width: 99%;
+      padding: 1% 0;
+    }
+
+    @media @mobile {
+      flex-direction: column;
+    }
+
     img {
-      max-width: 30%;
+      max-width: 28%;
       border-radius: 250px;
-      border: 8px solid @accent-color;
+      border: 10px solid @accent-color;
+
+      @media @mid-point {
+        border: 5px solid @accent-color;
+      }
+
+      @media @mobile {
+        max-width: 50%;
+        margin-bottom: 3%;
+      }
+
+      @media @small-phone {
+        max-width: 60%;
+      }
     }
 
     .desc-text {
-      width: 60%;
+      width: 62%;
       text-align: center;
+
+      @media @mobile {
+        width: 92%;
+      }
 
       h2 {
         font-size: 3.4rem;
-        padding-bottom: 1%;
+        padding: 0 0 1%;
+
+        @media @desktop {
+          padding-top: 0;
+        }
+
+        @media @mid-point {
+          font-size: 2.9rem;
+        }
+
+        @media @small-phone {
+          font-size: 2.6rem;
+        }
       }
 
       h3 {
         font-size: 2.5rem;
         padding-bottom: 3%;
+
+        @media @mid-point {
+          font-size: 2.2rem;
+        }
+
+        @media @small-phone {
+          font-size: 1.8rem;
+        }
       }
 
       p {
         font-size: 1.6rem;
-        line-height: 1.2;
+        line-height: 1.4;
+
+        @media @mid-point {
+          font-size: 1.4rem;
+        }
       }
     }
   }
 }
 
 .final-info {
-  .center-flex(center,center);
-  margin: 0 auto;
-  width: 70%;
-  padding: 2% 0 0;
+  .center-flex(center, center);
+  flex-direction: column;
+  width: 100%;
+  padding: 2% 0;
   line-height: 1.8;
+
+  @media @tablet {
+    padding: 3% 0;
+  }
+
+  @media @small-phone {
+    padding: 7% 0;
+  }
+
+  h3 {
+    @media @tablet {
+      font-size: 2rem;
+    }
+
+    @media @small-phone {
+      font-size: 1.8rem;
+      padding-bottom: 3%;
+    }
+  }
+
+  a {
+    .button-style(@accent-color, 250px, 0.5%);
+
+    @media @tablet {
+      .button-style(@accent-color, 200px, 0.5%);
+    }
+
+    @media @mobile {
+      .button-style(@accent-color, 175px, 0.3%);
+    }
+
+    @media @small-phone {
+      .button-style(@accent-color, 175px, 0.2%);
+    }
+  }
 }
