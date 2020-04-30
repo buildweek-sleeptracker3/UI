@@ -1210,8 +1210,7 @@ footer nav a:hover {
   }
 }
 .product-features {
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding: 1% 0;
 }
 .product-features .feature-light,
 .product-features .feature-dark {
@@ -1223,6 +1222,8 @@ footer nav a:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin: 0 auto;
+  width: 85%;
 }
 .product-features .feature-light .specifics img,
 .product-features .feature-dark .specifics img {
