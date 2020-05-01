@@ -316,6 +316,8 @@ header nav .nav-quadrant-1 a {
   font-family: 'Comfortaa', cursive;
   min-width: 30%;
   max-width: 160px;
+  transition-property: color, letter-spacing;
+  transition-duration: 1s;
 }
 @media (max-width: 1000px) {
   header nav .nav-quadrant-1 a {
@@ -339,6 +341,17 @@ header nav .nav-quadrant-1 a {
 }
 header nav .nav-quadrant-1 a:hover {
   color: #ffffff;
+  letter-spacing: 2px;
+}
+@media (max-width: 650px) {
+  header nav .nav-quadrant-1 a:hover {
+    letter-spacing: 1.5px;
+  }
+}
+@media (max-width: 500px) {
+  header nav .nav-quadrant-1 a:hover {
+    letter-spacing: 1.3px;
+  }
 }
 @media (max-width: 375px) {
   header nav .nav-quadrant-1 a {
@@ -364,6 +377,8 @@ header nav .nav-quadrant-2 a {
   font-family: 'Comfortaa', cursive;
   min-width: 30%;
   max-width: 160px;
+  transition-property: color, letter-spacing;
+  transition-duration: 1s;
 }
 @media (max-width: 1000px) {
   header nav .nav-quadrant-2 a {
@@ -387,6 +402,17 @@ header nav .nav-quadrant-2 a {
 }
 header nav .nav-quadrant-2 a:hover {
   color: #ffffff;
+  letter-spacing: 2px;
+}
+@media (max-width: 650px) {
+  header nav .nav-quadrant-2 a:hover {
+    letter-spacing: 1.5px;
+  }
+}
+@media (max-width: 500px) {
+  header nav .nav-quadrant-2 a:hover {
+    letter-spacing: 1.3px;
+  }
 }
 @media (max-width: 375px) {
   header nav .nav-quadrant-2 a {
@@ -446,6 +472,8 @@ footer nav a {
   font-family: 'Comfortaa', cursive;
   min-width: 30%;
   max-width: 160px;
+  transition-property: color, letter-spacing;
+  transition-duration: 1s;
   font-size: 1.5rem;
 }
 @media (max-width: 1000px) {
@@ -470,6 +498,17 @@ footer nav a {
 }
 footer nav a:hover {
   color: #ffffff;
+  letter-spacing: 2px;
+}
+@media (max-width: 650px) {
+  footer nav a:hover {
+    letter-spacing: 1.5px;
+  }
+}
+@media (max-width: 500px) {
+  footer nav a:hover {
+    letter-spacing: 1.3px;
+  }
 }
 @media (max-width: 500px) {
   footer nav a {
@@ -553,6 +592,8 @@ footer nav a:hover {
   border-radius: 15px;
   margin: 0 auto;
   text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 1s;
 }
 @media (max-width: 800px) {
   .featured .big-button {
@@ -570,7 +611,7 @@ footer nav a:hover {
   }
 }
 .featured .big-button:hover {
-  background-color: #4ba3be;
+  background-color: #2b6678;
 }
 @media (max-width: 1000px) {
   .featured .big-button {
@@ -583,9 +624,11 @@ footer nav a:hover {
     border-radius: 15px;
     margin: 0 auto;
     text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 1s;
   }
   .featured .big-button:hover {
-    background-color: #4ba3be;
+    background-color: #2b6678;
   }
 }
 @media (max-width: 1000px) and (max-width: 800px) {
@@ -614,9 +657,11 @@ footer nav a:hover {
     border-radius: 15px;
     margin: 0 auto;
     text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 1s;
   }
   .featured .big-button:hover {
-    background-color: #4ba3be;
+    background-color: #2b6678;
   }
 }
 @media (max-width: 1000px) and (max-width: 800px) {
@@ -645,9 +690,11 @@ footer nav a:hover {
     border-radius: 15px;
     margin: 0 auto;
     text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 1s;
   }
   .featured .big-button:hover {
-    background-color: #4ba3be;
+    background-color: #2b6678;
   }
 }
 @media (max-width: 500px) and (max-width: 800px) {
@@ -685,8 +732,10 @@ footer nav a:hover {
   width: 31%;
 }
 .preview .feature-preview img {
-  max-width: 100%;
+  max-width: 95%;
   border-radius: 30px;
+  transition-property: max-width, border, margin-bottom;
+  transition-duration: 1s, 1s;
 }
 @media (max-width: 500px) {
   .preview .feature-preview img {
@@ -696,6 +745,21 @@ footer nav a:hover {
 @media (max-width: 375px) {
   .preview .feature-preview img {
     width: 80%;
+  }
+}
+.preview .feature-preview img:hover {
+  max-width: 100%;
+  border: 5px solid #39869d;
+  margin-bottom: -5%;
+}
+@media (max-width: 500px) {
+  .preview .feature-preview img:hover {
+    margin: 0;
+  }
+}
+@media (max-width: 375px) {
+  .preview .feature-preview img:hover {
+    margin: 0;
   }
 }
 .preview .feature-preview h3 {
@@ -782,6 +846,8 @@ footer nav a:hover {
   border-radius: 15px;
   margin: 0 auto;
   text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 1s;
 }
 @media (max-width: 800px) {
   .app-about a {
@@ -799,7 +865,7 @@ footer nav a:hover {
   }
 }
 .app-about a:hover {
-  background-color: #4ba3be;
+  background-color: #2b6678;
 }
 @media (max-width: 1000px) {
   .app-about a {
@@ -812,9 +878,11 @@ footer nav a:hover {
     border-radius: 15px;
     margin: 0 auto;
     text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 1s;
   }
   .app-about a:hover {
-    background-color: #4ba3be;
+    background-color: #2b6678;
   }
 }
 @media (max-width: 1000px) and (max-width: 800px) {
@@ -843,9 +911,11 @@ footer nav a:hover {
     border-radius: 15px;
     margin: 0 auto;
     text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 1s;
   }
   .app-about a:hover {
-    background-color: #4ba3be;
+    background-color: #2b6678;
   }
 }
 @media (max-width: 500px) and (max-width: 800px) {
@@ -1004,6 +1074,8 @@ footer nav a:hover {
   max-width: 28%;
   border-radius: 250px;
   border: 10px solid #39869d;
+  transition-property: box-shadow;
+  transition-duration: 1s;
 }
 @media (max-width: 650px) {
   .dev-desc .interior img {
@@ -1020,6 +1092,9 @@ footer nav a:hover {
   .dev-desc .interior img {
     max-width: 60%;
   }
+}
+.dev-desc .interior img:hover {
+  box-shadow: 0 0 1.5rem #ffffff;
 }
 .dev-desc .interior .desc-text {
   width: 62%;
@@ -1062,6 +1137,13 @@ footer nav a:hover {
   .dev-desc .interior .desc-text h3 {
     font-size: 1.8rem;
   }
+}
+.dev-desc .interior .desc-text a {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+.dev-desc .interior .desc-text a:hover {
+  color: #39869d;
 }
 .dev-desc .interior .desc-text p {
   font-size: 1.6rem;
@@ -1112,6 +1194,8 @@ footer nav a:hover {
   border-radius: 15px;
   margin: 0 auto;
   text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 1s;
 }
 @media (max-width: 800px) {
   .final-info a {
@@ -1129,7 +1213,7 @@ footer nav a:hover {
   }
 }
 .final-info a:hover {
-  background-color: #4ba3be;
+  background-color: #2b6678;
 }
 @media (max-width: 800px) {
   .final-info a {
@@ -1142,9 +1226,11 @@ footer nav a:hover {
     border-radius: 15px;
     margin: 0 auto;
     text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 1s;
   }
   .final-info a:hover {
-    background-color: #4ba3be;
+    background-color: #2b6678;
   }
 }
 @media (max-width: 800px) and (max-width: 800px) {
@@ -1173,9 +1259,11 @@ footer nav a:hover {
     border-radius: 15px;
     margin: 0 auto;
     text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 1s;
   }
   .final-info a:hover {
-    background-color: #4ba3be;
+    background-color: #2b6678;
   }
 }
 @media (max-width: 500px) and (max-width: 800px) {
@@ -1204,9 +1292,11 @@ footer nav a:hover {
     border-radius: 15px;
     margin: 0 auto;
     text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 1s;
   }
   .final-info a:hover {
-    background-color: #4ba3be;
+    background-color: #2b6678;
   }
 }
 @media (max-width: 375px) and (max-width: 800px) {
@@ -1281,6 +1371,8 @@ footer nav a:hover {
 .product-features .feature-dark .specifics img {
   border-radius: 30px;
   max-width: 30%;
+  transition-property: max-width, border, margin;
+  transition-duration: 1s, 1s;
 }
 @media (max-width: 800px) {
   .product-features .feature-light .specifics img,
@@ -1305,6 +1397,37 @@ footer nav a:hover {
   .product-features .feature-light .specifics img,
   .product-features .feature-dark .specifics img {
     max-width: 80%;
+  }
+}
+.product-features .feature-light .specifics img:hover,
+.product-features .feature-dark .specifics img:hover {
+  max-width: 32%;
+  border: 3px solid #39869d;
+  margin: -1%;
+}
+@media (max-width: 800px) {
+  .product-features .feature-light .specifics img:hover,
+  .product-features .feature-dark .specifics img:hover {
+    max-width: 43%;
+  }
+}
+@media (max-width: 650px) {
+  .product-features .feature-light .specifics img:hover,
+  .product-features .feature-dark .specifics img:hover {
+    max-width: 58%;
+    margin: -1.5%;
+  }
+}
+@media (max-width: 500px) {
+  .product-features .feature-light .specifics img:hover,
+  .product-features .feature-dark .specifics img:hover {
+    max-width: 63%;
+  }
+}
+@media (max-width: 375px) {
+  .product-features .feature-light .specifics img:hover,
+  .product-features .feature-dark .specifics img:hover {
+    max-width: 87%;
   }
 }
 .product-features .feature-light .specifics .text,

@@ -37,6 +37,8 @@
       img {
         border-radius: 30px;
         max-width: 30%;
+        transition-property: max-width, border, margin;
+        transition-duration: 1s, 1s;
 
         @media @tablet {
           max-width: 40%;
@@ -53,6 +55,29 @@
 
         @media @small-phone {
           max-width: 80%;
+        }
+      }
+
+      img:hover {
+        max-width: 32%;
+        border: 3px solid @accent-color;
+        margin: -1%;
+
+        @media @tablet {
+          max-width: 43%;
+        }
+
+        @media @mid-point {
+          max-width: 58%;
+          margin: -1.5%;
+        }
+
+        @media @mobile {
+          max-width: 63%;
+        }
+
+        @media @small-phone {
+          max-width: 87%;
         }
       }
 

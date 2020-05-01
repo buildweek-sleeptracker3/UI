@@ -12,6 +12,8 @@
   font-family: @heading-font;
   min-width: 30%;
   max-width: 160px;
+  transition-property: color, letter-spacing;
+  transition-duration: 1s;
 
   @media @desktop {
     font-size: 1.8rem;
@@ -31,6 +33,15 @@
 
   &:hover {
     color: lighten(@font-color, 40%);
+    letter-spacing: 2px;
+
+    @media @mid-point {
+      letter-spacing: 1.5px;
+    }
+
+    @media @mobile {
+      letter-spacing: 1.3px;
+    }
   }
 }
 
@@ -44,6 +55,8 @@
   border-radius: 15px;
   margin: 0 auto;
   text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 1s;
 
   @media @tablet {
     font-size: 1.7rem;
@@ -58,6 +71,6 @@
   }
 
   &:hover {
-    background-color: lighten(@bg-color, 10%);
+    background-color: darken(@bg-color, 10%);
   }
 }
