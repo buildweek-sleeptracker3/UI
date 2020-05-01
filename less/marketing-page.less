@@ -65,8 +65,10 @@
   .feature-preview {
     width: 31%;
     img {
-      max-width: 100%;
+      max-width: 95%;
       border-radius: 30px;
+      transition-property: max-width, border, margin-bottom;
+      transition-duration: 1s, 1s;
 
       @media @mobile {
         padding-top: 2%;
@@ -76,6 +78,21 @@
         width: 80%;
       }
     }
+
+    img:hover {
+      max-width: 100%;
+      border: 5px solid @accent-color;
+      margin-bottom: -5%;
+
+      @media @mobile {
+        margin: 0;
+      }
+
+      @media @small-phone {
+        margin: 0;
+      }
+    }
+
     h3 {
       padding: 10% 0 0 0;
 
